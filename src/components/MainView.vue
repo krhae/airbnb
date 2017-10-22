@@ -1,10 +1,12 @@
 <template lang="pug">
   .div.main-view
     navigation-bar(v-if="showNavBar")
+    help-form
 </template>
 
 <script>
 import NavigationBar from './NavigationBar'
+import HelpForm from './HelpForm'
 
 export default {
   name: 'MainView',
@@ -15,7 +17,8 @@ export default {
     }
   },
   components: {
-    NavigationBar
+    NavigationBar,
+    HelpForm
     // TODO: handle action btn click and switch out main element
   }
 }
